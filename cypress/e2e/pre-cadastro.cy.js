@@ -25,4 +25,9 @@ describe('Funcionalidade: Pré Cadastro', () => {
         
     });
     
+    it.only('Deve completar o pré cadastro com sucesso usando comandos Personalizados', () => {
+        let emailFaker2 = faker.internet.email()
+        cy.précadastro(emailFaker2, 'senha@forte1', 'Luiz', 'Stenfield')
+    });
+
 });
