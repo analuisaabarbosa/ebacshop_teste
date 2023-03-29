@@ -17,7 +17,7 @@ context('Funcionalidade: Endereço - Faturamento e Entrega', () => {
 
     });
 
-    it.only('Deve fazer cadastro de faturamento com sucesso - Usanso arquivo de dados', () => {
+    it('Deve fazer cadastro de faturamento com sucesso - Usanso arquivo de dados', () => {
         EndereçoPage.editarEnderaçoFaturamento(
             dadosEndereco[0].nome, 
             dadosEndereco[0].sobrenome, 
