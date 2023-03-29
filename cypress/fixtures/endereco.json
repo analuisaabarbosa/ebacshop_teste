@@ -1,0 +1,41 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Barbosa",
+        "empresa": "Google",
+        "pais": "Brasil",
+        "endereco": "Av. Euclides",
+        "numero": "420",
+        "cidade": "São Bernardo do Campo",
+        "estado": "São Paulo",
+        "cep": "14807-262",
+        "celular": "+55 11 91083-1095",
+        "email": "analuisa@barbosa.com"
+    },
+    {
+        "nome": "Vicent",
+        "sobrenome": "Oliver",
+        "empresa": "Sphynxs Association",
+        "pais": "Brasil",
+        "endereco": "Rua Monte Alegre",
+        "numero": "24",
+        "cidade": "São Bernardo do Campo",
+        "estado": "São Paulo",
+        "cep": "09742-505",
+        "celular": "+55 11 92138-2159",
+        "email": "vicentolivert@gmail.com"
+    },
+    {
+        "nome": "Mariane",
+        "sobrenome": "Guimarães",
+        "empresa": "Natura",
+        "pais": "Brasil",
+        "endereco": "Rua dos Raposos",
+        "numero": "680",
+        "cidade": "São Bernardo do Campo",
+        "estado": "São Paulo",
+        "cep": "09000-000",
+        "celular": "+55 11 99123-7895",
+        "email": "mariguimaraes@gmail.com"
+    }
+]

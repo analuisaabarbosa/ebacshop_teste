@@ -7,9 +7,7 @@ describe('Funcionalidade: Página de Produtos', () => {
     });
 
     it('Deve selecionar um produto da lista', () => {
-        cy.get('[class = "product-block grid"]')
-            .contains('Atlas Fitness Tank')
-            .click()
+        cy.get('[class = "product-block grid"]').contains('Atlas Fitness Tank').click()
     });
 
     it('Deve adicionar um produto ao carrinho', () => {
@@ -26,7 +24,7 @@ describe('Funcionalidade: Página de Produtos', () => {
         cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Atlas Fitness Tank” foram adicionados no seu carrinho.')
     });
 
-    it.only('Deve adicionar um produto ao carrinho usando comandos personalizados', () => {
+    it('Deve adicionar um produto ao carrinho usando comandos personalizados', () => {
         cy.addprodutos('Atlas Fitness Tank', 'M', 'Blue', 2)
         
     });
