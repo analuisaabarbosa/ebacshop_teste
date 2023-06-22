@@ -25,7 +25,7 @@ describe('Funcionalidade: Página de Produtos', () => {
     });
 
     it('Deve adicionar um produto ao carrinho usando comandos personalizados', () => {
-        cy.addprodutos('Atlas Fitness Tank', 'M', 'Blue', 2)
+        cy.addprodutos('produtos/#', 'Atlas Fitness Tank', 'M', 'Blue', 2)
         
     });
 

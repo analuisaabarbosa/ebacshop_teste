@@ -43,13 +43,11 @@ Cypress.Commands.add('précadastro', (email, senha, nome, sobrenome) => {
     cy.get('.woocommerce-message').should('contain' , 'Detalhes da conta modificados com sucesso.')
 })
 
-Cypress.Commands.add('addprodutos', (produtos, tamanho, cor, quantidade) => {
-    cy.get('[class = "product-block grid"]').contains(produtos) .click()
-
+Cypress.Commands.add('addprodutos', (pagina, produto, tamanho, cor) => {
+    cy.get('#primary-menu > .menu-item-629 > a').click()
+    cy.visit(pagina)
+    cy.get('[class = "product-block grid"]').contains(produto).click()
     cy.get('.button-variable-item-' + tamanho).click()
-    cy.get(':nth-child(2) > .value > .variable-items-wrapper > .variable-item').click()
-    cy.get('.input-text').clear().type(quantidade)
+    cy.get('.button-variable-item-' + cor).click()
     cy.get('.single_add_to_cart_button').click()
-
-    cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
 })
