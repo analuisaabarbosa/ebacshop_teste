@@ -12,7 +12,7 @@ context('Funcionalidade: Endereço - Faturamento e Entrega', () => {
     });
 
     it('Deve fazer cadastro de faturamento com sucesso', () => {
-        EndereçoPage.editarEnderaçoFaturamento('Ana', 'Barbosa', 'Google', 'Brasil', 'Av Euclides', '420', 'São Bernardo do Campo', 'São Paulo', '09725', '+55 11 91083-1095', 'analuisa@barbosa.com')
+        EndereçoPage.editarEnderaçoFaturamento('Ana', 'Barbosa', 'Google', 'Brasil', 'Av Euclides', '420', 'São Bernardo do Campo', 'São Paulo', '09725-000', '+55 11 91083-1095', 'analuisa@barbosa.com')
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
 
     });
